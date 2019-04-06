@@ -1,0 +1,87 @@
+.heading {
+    background-color:#95e6b4;
+    text-align: center;
+    font-weight: 300;
+}
+
+.col-sm   {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* padding: 30px 30px 30px 30px; */
+    text-align: center;
+
+}
+
+.box {
+    transition:box-shadow: .5s;
+    width:auto;
+    height:auto;
+    margin:right;
+    margin:left;
+    border-radius:10px;
+    border:2px solid #ccc;
+    background: #fff;
+}
+
+.box:hover {
+    box-shadow: 0 0 80px rgba(33, 33, 33, 2);
+
+}
+
+.product {
+    width: 80%;
+    padding: 20px 10px 10px 10px;
+}
+
+.space { margin-top: 70px; }
+
+.price {
+    color: brown;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.button {
+    position: relative;
+    background-color: #90EE90;
+    border-radius: 50px;
+    font-size: 12px;
+    color: black;
+    font-weight: 700;
+    padding:20px;
+    margin-bottom: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: brown;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    background: #90EE90;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+    
+  }
+
